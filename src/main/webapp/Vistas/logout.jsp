@@ -1,9 +1,3 @@
-<%-- 
-    Document   : logout
-    Created on : 1 oct. 2023, 13:29:09
-    Author     : melan
---%>
-
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%
     // Obtener el valor del campo oculto "logout"

@@ -1,9 +1,3 @@
-<%-- 
-    Document   : carrito
-    Created on : 29 sep. 2023, 10:45:35
-    Author     : melan
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>

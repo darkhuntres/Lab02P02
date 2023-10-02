@@ -1,9 +1,3 @@
-<%-- 
-    Document   : registro
-    Created on : 29 sep. 2023, 10:29:29
-    Author     : melan
---%>
-
 <%@page import="ModelosDAO.ClienteDAO"%>
 <%@page import="Modelos.Cliente"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>

@@ -1,8 +1,3 @@
-<%-- 
-    Document   : index
-    Created on : 1 oct. 2023, 22:53:05
-    Author     : kikii
---%>
 <%@ page import="javax.servlet.http.HttpSession" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 

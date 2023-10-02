@@ -1,8 +1,3 @@
-<%-- 
-    Document   : login
-    Created on : 29 sep. 2023, 10:25:29
-    Author     : melan
---%>
 <%@page import="ModelosDAO.ClienteDAO"%>
 <%@page import="Modelos.Cliente"%>
 <%

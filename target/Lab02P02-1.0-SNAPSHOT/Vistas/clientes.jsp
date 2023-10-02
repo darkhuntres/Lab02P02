@@ -1,9 +1,3 @@
-<%-- 
-    Document   : admin
-    Created on : 29 sep. 2023, 10:28:52
-    Author     : melan
---%>
-
 <%@page import="java.util.List"%>
 <%@page import="java.util.ArrayList"%>
 <%@page import="Modelos.Cliente"%>

@@ -1,9 +1,3 @@
-<%-- 
-    Document   : admin
-    Created on : 29 sep. 2023, 10:28:52
-    Author     : melan
---%>
-
 <%@page import="ModelosDAO.ProductoDAO"%>
 <%@page import="Modelos.Producto"%>
 <%@page import="Modelos.Proveedor"%>

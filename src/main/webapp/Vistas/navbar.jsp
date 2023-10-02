@@ -1,8 +1,4 @@
-<%-- 
-    Document   : navbar
-    Created on : 29 sep. 2023, 10:25:40
-    Author     : melan
---%>
+
 <%
     HttpSession sess = request.getSession();
      

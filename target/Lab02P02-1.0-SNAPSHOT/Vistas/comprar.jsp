@@ -1,9 +1,3 @@
-<%-- 
-    Document   : comprar
-    Created on : 29 sep. 2023, 10:45:26
-    Author     : melan
---%>
-
 <%
 HttpSession sesion = request.getSession();
 
