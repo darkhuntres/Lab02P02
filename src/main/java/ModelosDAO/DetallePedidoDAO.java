@@ -17,13 +17,13 @@ import java.util.List;
  *
  * @author magana
  */
-public class Detalle_pedidoDAO {
+public class DetallePedidoDAO {
     private cn CN;
     private Connection con;
     private PreparedStatement ps;
     private ResultSet rs;
     
-    public Detalle_pedidoDAO() throws ClassNotFoundException{
+    public DetallePedidoDAO() throws ClassNotFoundException{
         CN = new cn();
     }
     
