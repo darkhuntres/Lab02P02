@@ -1,10 +1,12 @@
 db\cn.class
 Modelos\Producto.class
+ModelosDAO\PedidoDAO.class
 com\mycompany\lab02p02\resources\JavaEE8Resource.class
 com\mycompany\lab02p02\JAXRSConfiguration.class
 Modelos\Cliente.class
 ModelosDAO\ClienteDAO.class
 ModelosDAO\ProductoDAO.class
+ModelosDAO\DetallePedidoDAO.class
 Modelos\Categoria.class
 ModelosDAO\CategoriaDAO.class
 Modelos\DetallePedido.class
