@@ -1,15 +1,15 @@
-C:\Users\vladi\OneDrive\Escritorio\2023\Ciclo 2\De Multiplataforma app web\Periodo 2\laboratorio2\Lab02P02\src\main\java\Modelos\DetallePedido.java
-C:\Users\vladi\OneDrive\Escritorio\2023\Ciclo 2\De Multiplataforma app web\Periodo 2\laboratorio2\Lab02P02\src\main\java\Modelos\Cliente.java
-C:\Users\vladi\OneDrive\Escritorio\2023\Ciclo 2\De Multiplataforma app web\Periodo 2\laboratorio2\Lab02P02\src\main\java\Modelos\Producto.java
-C:\Users\vladi\OneDrive\Escritorio\2023\Ciclo 2\De Multiplataforma app web\Periodo 2\laboratorio2\Lab02P02\src\main\java\ModelosDAO\ProductoDAO.java
-C:\Users\vladi\OneDrive\Escritorio\2023\Ciclo 2\De Multiplataforma app web\Periodo 2\laboratorio2\Lab02P02\src\main\java\com\mycompany\lab02p02\resources\JavaEE8Resource.java
-C:\Users\vladi\OneDrive\Escritorio\2023\Ciclo 2\De Multiplataforma app web\Periodo 2\laboratorio2\Lab02P02\src\main\java\com\mycompany\lab02p02\JAXRSConfiguration.java
-C:\Users\vladi\OneDrive\Escritorio\2023\Ciclo 2\De Multiplataforma app web\Periodo 2\laboratorio2\Lab02P02\src\main\java\ModelosDAO\DetallePedidoDAO.java
-C:\Users\vladi\OneDrive\Escritorio\2023\Ciclo 2\De Multiplataforma app web\Periodo 2\laboratorio2\Lab02P02\src\main\java\ModelosDAO\CategoriaDAO.java
-C:\Users\vladi\OneDrive\Escritorio\2023\Ciclo 2\De Multiplataforma app web\Periodo 2\laboratorio2\Lab02P02\src\main\java\ModelosDAO\PedidoDAO.java
-C:\Users\vladi\OneDrive\Escritorio\2023\Ciclo 2\De Multiplataforma app web\Periodo 2\laboratorio2\Lab02P02\src\main\java\ModelosDAO\ClienteDAO.java
-C:\Users\vladi\OneDrive\Escritorio\2023\Ciclo 2\De Multiplataforma app web\Periodo 2\laboratorio2\Lab02P02\src\main\java\Modelos\Pedido.java
-C:\Users\vladi\OneDrive\Escritorio\2023\Ciclo 2\De Multiplataforma app web\Periodo 2\laboratorio2\Lab02P02\src\main\java\Modelos\Proveedor.java
-C:\Users\vladi\OneDrive\Escritorio\2023\Ciclo 2\De Multiplataforma app web\Periodo 2\laboratorio2\Lab02P02\src\main\java\ModelosDAO\ProveedorDAO.java
-C:\Users\vladi\OneDrive\Escritorio\2023\Ciclo 2\De Multiplataforma app web\Periodo 2\laboratorio2\Lab02P02\src\main\java\Modelos\Categoria.java
-C:\Users\vladi\OneDrive\Escritorio\2023\Ciclo 2\De Multiplataforma app web\Periodo 2\laboratorio2\Lab02P02\src\main\java\db\cn.java
+C:\Users\gergo\Desktop\C2 2023\D Apps Web Multiplataforma\P2\lab 2 25%\Lab02P02\src\main\java\com\mycompany\lab02p02\JAXRSConfiguration.java
+C:\Users\gergo\Desktop\C2 2023\D Apps Web Multiplataforma\P2\lab 2 25%\Lab02P02\src\main\java\Modelos\Categoria.java
+C:\Users\gergo\Desktop\C2 2023\D Apps Web Multiplataforma\P2\lab 2 25%\Lab02P02\src\main\java\com\mycompany\lab02p02\resources\JavaEE8Resource.java
+C:\Users\gergo\Desktop\C2 2023\D Apps Web Multiplataforma\P2\lab 2 25%\Lab02P02\src\main\java\ModelosDAO\DetallePedidoDAO.java
+C:\Users\gergo\Desktop\C2 2023\D Apps Web Multiplataforma\P2\lab 2 25%\Lab02P02\src\main\java\Modelos\DetallePedido.java
+C:\Users\gergo\Desktop\C2 2023\D Apps Web Multiplataforma\P2\lab 2 25%\Lab02P02\src\main\java\Modelos\Cliente.java
+C:\Users\gergo\Desktop\C2 2023\D Apps Web Multiplataforma\P2\lab 2 25%\Lab02P02\src\main\java\Modelos\Pedido.java
+C:\Users\gergo\Desktop\C2 2023\D Apps Web Multiplataforma\P2\lab 2 25%\Lab02P02\src\main\java\db\cn.java
+C:\Users\gergo\Desktop\C2 2023\D Apps Web Multiplataforma\P2\lab 2 25%\Lab02P02\src\main\java\ModelosDAO\ClienteDAO.java
+C:\Users\gergo\Desktop\C2 2023\D Apps Web Multiplataforma\P2\lab 2 25%\Lab02P02\src\main\java\ModelosDAO\PedidoDAO.java
+C:\Users\gergo\Desktop\C2 2023\D Apps Web Multiplataforma\P2\lab 2 25%\Lab02P02\src\main\java\ModelosDAO\ProveedorDAO.java
+C:\Users\gergo\Desktop\C2 2023\D Apps Web Multiplataforma\P2\lab 2 25%\Lab02P02\src\main\java\ModelosDAO\ProductoDAO.java
+C:\Users\gergo\Desktop\C2 2023\D Apps Web Multiplataforma\P2\lab 2 25%\Lab02P02\src\main\java\Modelos\Producto.java
+C:\Users\gergo\Desktop\C2 2023\D Apps Web Multiplataforma\P2\lab 2 25%\Lab02P02\src\main\java\Modelos\Proveedor.java
+C:\Users\gergo\Desktop\C2 2023\D Apps Web Multiplataforma\P2\lab 2 25%\Lab02P02\src\main\java\ModelosDAO\CategoriaDAO.java
