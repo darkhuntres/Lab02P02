@@ -7,10 +7,10 @@ HttpSession sesion = request.getSession();
 
 <c:choose>
     <c:when test="${empty sessionScope.user_logged}">
-        <jsp:include page="Vistas/navbar_admin.jsp" />
+        <jsp:include page="Vistas/nav.jsp" />
     </c:when>
     <c:otherwise>
-        <jsp:include page="Vistas/navbar.jsp" />
+        <jsp:include page="Vistas/navar.jsp" />
     </c:otherwise>
 </c:choose>
 

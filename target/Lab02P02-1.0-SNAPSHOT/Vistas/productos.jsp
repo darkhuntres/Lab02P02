@@ -41,7 +41,7 @@ if(request.getParameter("btn_remover_producto") != null){
     </head>
     <body>
         <header>
-            <jsp:include page="navbar_admin.jsp"></jsp:include>
+            <jsp:include page="navbar.jsp"></jsp:include>
         </header>
         <div class="container-fluid m-2">
             <div class="container text-center">
