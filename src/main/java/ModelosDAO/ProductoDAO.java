@@ -21,11 +21,11 @@ public class ProductoDAO {
     private Connection con;
     private PreparedStatement ps;
     private ResultSet rs;
-    
-    public ProductoDAO() throws ClassNotFoundException{
+
+    public ProductoDAO() throws ClassNotFoundException {
         CN = new cn();
     }
-    
+
     public ArrayList<Producto> listarProductos() {
         ArrayList<Producto> lista = new ArrayList<>();
         String sql = "SELECT p.idproducto, c.nombre_categoria, pr.nombre_proveedor, p.nombre_producto, p.precio_normal,"
@@ -53,7 +53,7 @@ public class ProductoDAO {
             }
 
         } catch (Exception e) {
-            
+
         }
         return lista;
     }
@@ -62,7 +62,7 @@ public class ProductoDAO {
         Producto prod = null;
         String sql = "SELECT p.idproducto, c.nombre_categoria, pr.nombre_proveedor, p.nombre_producto, p.precio_normal,"
                 + "p.ofertado, p.precio_oferta, p.existencias, p.descripcion, p.imagen "
-                + "FROM producto p JOIN categoria c ON p.idcategoria = c.idcategoria JOIN proveedor pr ON p.idproveedor = pr.idproveedor"
+                + "FROM productos p JOIN categorias c ON p.idcategoria = c.idcategoria JOIN proveedores pr ON p.idproveedor = pr.idproveedor"
                 + " where p.idproducto = ?";
 
         try {
@@ -72,6 +72,7 @@ public class ProductoDAO {
             rs = ps.executeQuery();
 
             if (rs.next()) {
+                prod = new Producto();
                 prod.setIdProducto(rs.getInt("idproducto"));
                 prod.setNombre_cat(rs.getString("nombre_categoria"));
                 prod.setNombre_prov(rs.getString("nombre_proveedor"));
@@ -85,16 +86,13 @@ public class ProductoDAO {
             }
         } catch (Exception e) {
 
-        } 
+        }
 
         return prod;
     }
-    
-    
 
-    
     public boolean agregarProducto(Producto prod) {
-        String sql = "INSERT INTO producto(idcategoria, idproveedor, nombre_producto, precio_normal, "
+        String sql = "INSERT INTO productos VALUES(idcategoria, idproveedor, nombre_producto, precio_normal, "
                 + "ofertado, precio_oferta, existencias, descripcion, imagen)"
                 + " VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
@@ -102,7 +100,7 @@ public class ProductoDAO {
             con = CN.getCon();
             ps = con.prepareStatement(sql);
             ps.setInt(1, prod.getIdCategoria());
-            ps.setInt(2, prod.getIdProducto());
+            ps.setInt(2, prod.getIdProveedor());  
             ps.setString(3, prod.getNombreProducto());
             ps.setDouble(4, prod.getPrecioNormal());
             ps.setInt(5, prod.getOfertado());
@@ -120,15 +118,15 @@ public class ProductoDAO {
     }
 
     public boolean actualizarProducto(Producto prod) {
-        String sql = "UPDATE producto SET idcategoria = ?, idproveedor = ?, nombre_producto = ?, "
-           + "precio_normal = ?, ofertado = ?, precio_oferta = ?, existencias = ?, "
-           + "descripcion = ?, imagen = ? WHERE idproducto = ?";
+        String sql = "INSERT INTO productos (idcategoria, idproveedor, nombre_producto, precio_normal, "
+            + "ofertado, precio_oferta, existencias, descripcion, imagen)"
+            + " VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
         try {
             con = CN.getCon();
             ps = con.prepareStatement(sql);
             ps.setInt(1, prod.getIdCategoria());
-            ps.setInt(2, prod.getIdProducto());
+            ps.setInt(2, prod.getIdProveedor());
             ps.setString(3, prod.getNombreProducto());
             ps.setDouble(4, prod.getPrecioNormal());
             ps.setInt(5, prod.getOfertado());
@@ -147,7 +145,7 @@ public class ProductoDAO {
     }
 
     public boolean eliminarProducto(int id) {
-        String sql = "DELETE FROM producto WHERE idproducto=?";
+        String sql = "DELETE FROM productos WHERE idproducto=?";
 
         try {
             con = CN.getCon();
