@@ -231,50 +231,51 @@ if(request.getParameter("btn_remover_producto") != null){
                 <h1>Gestionar productos</h1>
                 <div class="container border shadow rounded" style="padding-top: 10px; margin-bottom: 20px;">
         
-                    <%
-                        if(request.getParameter("btn_nuevo_producto") != null){
-                            if(!(request.getParameter("nombre_producto").isEmpty())&&
-                            !(request.getParameter("categoria_producto").isEmpty())&&
-                            !(request.getParameter("proveedor_producto").isEmpty())&&
-                            !(request.getParameter("precio_producto").isEmpty())&&
-                            !(request.getParameter("ofertado_producto").isEmpty())&&
-                            !(request.getParameter("precio_oferta").isEmpty())&&
-                            !(request.getParameter("existencias").isEmpty())&&
-                            !(request.getParameter("descripcion_producto").isEmpty())&&
-                            !(request.getParameter("imagen_producto").isEmpty())){
-                                String nombre = request.getParameter("nombre_producto");
-                                String categoria = request.getParameter("categoria_producto");
-                                CategoriaDAO catprod = new CategoriaDAO();
-                                int idcat = catprod.ObtenerId(categoria);
-                                String provee = request.getParameter("proveedor_producto");
-                                ProveedorDAO provprod = new ProveedorDAO();
-                                int idprod = provprod.ObtenerId(provee);
-                                double precio = Double.parseDouble(request.getParameter("precio_producto"));
-                                int ofertado = 0;
-                                if(request.getParameter("ofertado_producto").equals("Sí"))
-                                    ofertado = 1;
-                                double precio_oferta = Double.parseDouble(request.getParameter("precio_oferta"));
-                                int existencias = Integer.parseInt(request.getParameter("existencias"));
-                                String descripcion = request.getParameter("descripcion_producto");
-                                String imagen = request.getParameter("imagen_producto");
-                                
-                                Producto prod = new Producto();
-                                ProductoDAO proddao = new ProductoDAO();
-                                prod.setIdCategoria(idcat);
-                                prod.setIdProducto(idprod);
-                                prod.setNombreProducto(nombre);
-                                prod.setPrecioNormal(precio);
-                                prod.setOfertado(ofertado);
-                                prod.setPrecioOferta(precio_oferta);
-                                prod.setExistencias(existencias);
-                                prod.setDescripcion(descripcion);
-                                prod.setImagen(imagen);
-                                
-                                proddao.agregarProducto(prod);
-                                response.sendRedirect("productos.jsp");
-                            }
+                     <%
+                    if(request.getParameter("btn_nuevo_producto") != null){
+                        if(!(request.getParameter("nombre_producto").isEmpty()) &&
+                           !(request.getParameter("categoria_producto").isEmpty()) &&
+                           !(request.getParameter("proveedor_producto").isEmpty()) &&
+                           !(request.getParameter("precio_producto").isEmpty()) &&
+                           !(request.getParameter("ofertado_producto").isEmpty()) &&
+                           !(request.getParameter("precio_oferta").isEmpty()) &&
+                           !(request.getParameter("existencias").isEmpty()) &&
+                           !(request.getParameter("descripcion_producto").isEmpty()) &&
+                           !(request.getParameter("imagen_producto").isEmpty())){
+                            
+                            String nombre = request.getParameter("nombre_producto");
+                            String categoria = request.getParameter("categoria_producto");
+                            CategoriaDAO catprod = new CategoriaDAO();
+                            int idcat = catprod.ObtenerId(categoria);
+                            String provee = request.getParameter("proveedor_producto");
+                            ProveedorDAO provprod = new ProveedorDAO();
+                            int idprod = provprod.ObtenerId(provee);
+                            double precio = Double.parseDouble(request.getParameter("precio_producto"));
+                            int ofertado = 0;
+                            if(request.getParameter("ofertado_producto").equals("Sí"))
+                                ofertado = 1;
+                            double precio_oferta = Double.parseDouble(request.getParameter("precio_oferta"));
+                            int existencias = Integer.parseInt(request.getParameter("existencias"));
+                            String descripcion = request.getParameter("descripcion_producto");
+                            String imagen = request.getParameter("imagen_producto");
+                            
+                            Producto prod = new Producto();
+                            ProductoDAO proddao = new ProductoDAO();
+                            prod.setIdCategoria(idcat);
+                            prod.setIdProveedor(idprod);
+                            prod.setNombreProducto(nombre);
+                            prod.setPrecioNormal(precio);
+                            prod.setOfertado(ofertado);
+                            prod.setPrecioOferta(precio_oferta);
+                            prod.setExistencias(existencias);
+                            prod.setDescripcion(descripcion);
+                            prod.setImagen(imagen);
+                            
+                            proddao.agregarProducto(prod);
+                            response.sendRedirect("productos.jsp");
                         }
-                    %>
+                    }
+                %>
                     <!-- 3.1 Nuevo producto -->
                     <form class="bg-light border" method="POST" style="padding: 20px;">
                         <div class="row">

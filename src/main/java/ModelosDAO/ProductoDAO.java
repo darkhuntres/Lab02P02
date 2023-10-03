@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package ModelosDAO;
 
 import Modelos.Producto;
@@ -12,10 +7,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 
-/**
- *
- * @author melan
- */
 public class ProductoDAO {
     private cn CN;
     private Connection con;
@@ -51,9 +42,8 @@ public class ProductoDAO {
                 prod.setImagen(rs.getString("imagen"));
                 lista.add(prod);
             }
-
         } catch (Exception e) {
-
+            e.printStackTrace();
         }
         return lista;
     }
@@ -85,14 +75,14 @@ public class ProductoDAO {
                 prod.setImagen("imagen");
             }
         } catch (Exception e) {
-
+            e.printStackTrace();
         }
 
         return prod;
     }
 
     public boolean agregarProducto(Producto prod) {
-        String sql = "INSERT INTO productos VALUES(idcategoria, idproveedor, nombre_producto, precio_normal, "
+        String sql = "INSERT INTO productos (idcategoria, idproveedor, nombre_producto, precio_normal, "
                 + "ofertado, precio_oferta, existencias, descripcion, imagen)"
                 + " VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
@@ -111,16 +101,16 @@ public class ProductoDAO {
 
             int filasAfectadas = ps.executeUpdate();
             return filasAfectadas > 0;
-
         } catch (Exception e) {
+            e.printStackTrace();
             return false;
         }
     }
 
     public boolean actualizarProducto(Producto prod) {
-        String sql = "INSERT INTO productos (idcategoria, idproveedor, nombre_producto, precio_normal, "
-            + "ofertado, precio_oferta, existencias, descripcion, imagen)"
-            + " VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
+        String sql = "UPDATE productos SET idcategoria = ?, idproveedor = ?, nombre_producto = ?, "
+                + "precio_normal = ?, ofertado = ?, precio_oferta = ?, existencias = ?, "
+                + "descripcion = ?, imagen = ? WHERE idproducto = ?";
 
         try {
             con = CN.getCon();
@@ -138,8 +128,8 @@ public class ProductoDAO {
 
             int filasAfectadas = ps.executeUpdate();
             return filasAfectadas > 0;
-
         } catch (Exception e) {
+            e.printStackTrace();
             return false;
         }
     }
@@ -154,8 +144,8 @@ public class ProductoDAO {
 
             int filasAfectadas = ps.executeUpdate();
             return filasAfectadas > 0;
-
         } catch (Exception e) {
+            e.printStackTrace();
             return false;
         }
     }
